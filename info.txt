@@ -1,0 +1,58 @@
+// Tixdo 
+// Ticket booking --------> 
+
+Base url => https://www.tixdo.com (Production)
+// https://www.tixdo.com/login
+// https://www.tixdo.com/contactus
+// https://www.tixdo.com/aboutus
+
+// canary
+Base url =>  https://canary.tixdo.com
+// https://canary.tixdo.com/login
+// https://canary.tixdo/contactus
+// https://canary.tixdo/aboutus
+
+// staging 
+Base url =>    https://dev-stag.tixdo.com
+// https://dev-stag.tixdo.com/login
+// https://dev-stag.tixdo.com/contactus
+// https://dev-stag.tixdo.com/aboutus
+
+// local environment 
+
+Base url =>    https://localhost:8000
+// https://localhost:8000/login
+// https://localhost:8000/contactus
+// https://localhost:8000/aboutus
+
+// API --- baseurl + resource + parameter
+
+// testcase ---->
+// api - paypal --- client id //  secret id
+// db ---   id 
+
+// configuration
+
+cypress -- test runner / command line 
+// npx cypress open 
+// npx cypress run 
+
+//---------------------------------------------------------------------------
+
+// npx cypress run 
+// Approach one -
+
+// default headless mode
+npx cypress run --config baseUrl="https://www.google.com/"
+
+// deafault headed mode 
+npx cypress run --headed --config baseUrl="https://www.google.com/"
+
+// specfic broswer
+npx cypress run --headed --browser chrome --config baseUrl="https://www.google.com/"
+
+// add scripts tag to package.json 
+// npm run 'stag:chrome'
+
+// Approach
+https://dzone.com/articles/configure-cypress-tests-to-run-on-multiple-environments
