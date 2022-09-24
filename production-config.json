@@ -1,0 +1,6 @@
+{
+    "extends": "./cypress.json",
+    "baseUrl": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "username":"vishwajeet",
+    "password":"vishwa454"
+  }

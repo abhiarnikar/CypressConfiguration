@@ -1,4 +1,6 @@
 ///<reference types = "cypress"/>
+
+import {utility} from '../../cypress/support/utility'
 describe('verify the login function', function () {
 
     it('verify with valid credentials', function () {
@@ -17,7 +19,7 @@ describe('verify the login function', function () {
     it('verify the recruitment candidates', () => {
         cy.visit('/recruitment/viewCandidates')
     })
-    it.only('verify the login functionality', () => {
+    it('verify the login functionality', () => {
         let baseurlF = Cypress.config().baseUrl
         cy.visit(baseurlF)
         cy.get('input[name="username"]').type('Admin')
@@ -25,5 +27,12 @@ describe('verify the login function', function () {
         cy.get('button[type="submit"]').click()
         cy.get('p[class="oxd-userdropdown-name"]').should('have.text','Paul Collings')
     })
+     it.only('verify the valid credentials',()=>{
+        let Obj = new utility()
+        let s = Obj.getBaseUrl()
+        cy.visit(s)
+     })
+
+
 
 })

@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "stag:chrome":"npx cypress run --headed --browser chrome --config baseUrl=\"https://www.google.com/\"",
     "canary:chrome":"npx cypress run --headed --browser chrome --config baseUrl=\"https://www.facebook.com/\"",
-    "prod:firebox":"npx cypress run --headed --browser firefox --config baseUrl=\"https://www.yahoo.com/\""
+    "prod:firebox":"npx cypress run --headed --browser firefox --config baseUrl=\"https://www.yahoo.com/\"",
+    "stag:config":"npx cypress run --headed --config-file staging-config.json",
+    "prod:config":"npx cypress run --headed --config-file production-config.json",
+    "local:config":"npx cypress run --headed --config-file local-config.json"
   },
   "keywords": [],
   "author": "",
