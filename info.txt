@@ -56,3 +56,13 @@ npx cypress run --headed --browser chrome --config baseUrl="https://www.google.c
 
 // Approach
 https://dzone.com/articles/configure-cypress-tests-to-run-on-multiple-environments
+
+# commands to run different config files 
+
+npx cypress run --headed --config-file staging-config.json
+npx cypress run --headed --config-file production-config.json
+npx cypress run --headed --config-file local-config.json
+
+npx cypress run  --env ENV="production"
+npx cypress run  --env ENV="staging"
+npx cypress run  --env ENV="qa"

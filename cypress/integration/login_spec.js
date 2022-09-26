@@ -1,25 +1,20 @@
 ///<reference types = "cypress"/>
 
-import {utility} from '../../cypress/support/utility'
+ import {Utility} from '../support/utility'
+ let url = new Utility().getBaseUrl();
 describe('verify the login function', function () {
 
-    it('verify with valid credentials', function () {
-
+    it.only('3rd method with utility method ENV Variables',()=>{
+            cy.visit(url)
+    })
+    
+    it('2nd method verify with cypress config files', function () {
         let baseurlF = Cypress.config().baseUrl
-        //let extmout = Cypress.config()['execTimeout']
-        //cy.log(baseurlF)
-        //cy.log(extmout)
         cy.visit(baseurlF)
 
     })
-    it('verify the forgot password link', function () {
-        cy.visit('/auth/requestPasswordResetCode')
-
-    })
-    it('verify the recruitment candidates', () => {
-        cy.visit('/recruitment/viewCandidates')
-    })
-    it('verify the login functionality', () => {
+    
+    it('1st method verify with using baseurl with cypress.json', () => {
         let baseurlF = Cypress.config().baseUrl
         cy.visit(baseurlF)
         cy.get('input[name="username"]').type('Admin')
@@ -27,11 +22,7 @@ describe('verify the login function', function () {
         cy.get('button[type="submit"]').click()
         cy.get('p[class="oxd-userdropdown-name"]').should('have.text','Paul Collings')
     })
-     it.only('verify the valid credentials',()=>{
-        let Obj = new utility()
-        let s = Obj.getBaseUrl()
-        cy.visit(s)
-     })
+     
 
 
 
