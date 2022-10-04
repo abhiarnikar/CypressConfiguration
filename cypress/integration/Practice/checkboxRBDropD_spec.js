@@ -1,4 +1,4 @@
-(///<reference types = "cypress"/>
+///<reference types = "cypress"/>
 
 describe('verify the functionality of checkbox RadioButton Dropdown',()=>{
 
@@ -60,4 +60,4 @@ describe('verify the functionality of checkbox RadioButton Dropdown',()=>{
     })
 
 
-}))
+})
