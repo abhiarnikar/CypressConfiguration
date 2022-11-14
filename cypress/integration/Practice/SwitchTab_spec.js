@@ -7,5 +7,6 @@ describe('verify the switchTab option',()=>{
         cy.visit("https://codenboxautomationlab.com/practice/")
 
         cy.get('#opentab').invoke('removeAttr','target').click()
+        
     })
 })

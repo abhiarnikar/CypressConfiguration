@@ -54,7 +54,7 @@ npx cypress run --headed --browser chrome --config baseUrl="https://www.google.c
 // add scripts tag to package.json 
 // npm run 'stag:chrome'
 
-// Approach
+// Approach commands of configuration
 https://dzone.com/articles/configure-cypress-tests-to-run-on-multiple-environments
 
 # commands to run different config files 
