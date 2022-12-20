@@ -56,7 +56,8 @@ describe('verify the functionality of checkbox RadioButton Dropdown',()=>{
     it.only('verify the dynamic dropdown without select',()=>{
         cy.get('input[id="autocomplete"]').click().type('India').type('{Enter}')
         
-
+        
+      
     })
 
 
