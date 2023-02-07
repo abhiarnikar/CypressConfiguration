@@ -1,7 +1,7 @@
 ///<reference types = "cypress"/>
 
- import {Utility} from '../support/utility'
- let url = new Utility().getBaseUrl();
+import {Utility} from '../support/utility'
+let url = new Utility().getBaseUrl();
 describe('verify the login function', function () {
 
     it.only('3rd method with utility method ENV Variables',()=>{
