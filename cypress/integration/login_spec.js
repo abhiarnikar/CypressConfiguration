@@ -24,6 +24,4 @@ describe('verify the login function', function () {
     })
      
 
-
-
 })
